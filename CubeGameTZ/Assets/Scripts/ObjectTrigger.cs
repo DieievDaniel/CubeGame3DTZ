@@ -8,9 +8,9 @@ public class ObjectTrigger : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
-            collision.gameObject.SetActive(false); 
-            ScoreData.instance.AddScore(1); 
-            GameUI.instance.DisplayScore(); 
+            collision.gameObject.SetActive(false);
+            ScoreData.instance.AddScore(1);
+            GameUI.instance.DisplayScore();
         }
         else if (collision.gameObject.CompareTag("Obstacle"))
         {
